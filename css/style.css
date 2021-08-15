@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#main {
+    display: flex;
+    width: 650px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #171717;
+    border-radius: 10px;
+}
+.header-fix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#addBook {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #171717;
+    cursor: pointer;
+}
+#formBook {
+    width: auto;
+    margin: 20px 0 0 0;
+}
+.hidden {
+    display: none;
+}
+.form-group {
+    padding: 0 0 20px 0;
+}
+.form-group label:not(.form-group label[for=isFinishedReading]) {
+    display: block;
+    margin: 0 0 10px 0;
+}
+.form-group input[type=text], 
+.form-group input[type=number] {
+    width: -webkit-fill-available;
+    padding: 10px;
+    border: 1px solid #171717;
+    border-radius: 10px;
+    outline: none;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.form-group input[type=checkbox] {
+    margin: 0 10px;
+}
+#saveBook {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #171717;
+    font-size: medium;
+}
+#formSearch {
+    margin: 20px 0 0 0;
+}
+#formSearch input {
+    width: -webkit-fill-available;
+    padding: 10px;
+    border: 1px solid #171717;
+    border-radius: 10px;
+    outline: none;
+}
+#unfinishedReading, #finishedReading {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    border: 2px solid #D1D5DB;
+    border-radius: 10px;
+    background-color: #E5E7EB;
+}
+#unfinishedReading p, #finishedReading p {
+    margin: 10px 0 0 0;
+    font-size: medium;
+}
+.item-book {
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px #D1D5DB;
+}
+#boxUnfinishedReading span, 
+#boxFinishedReading span {
+    display: inline-block;
+    margin: 0 5px;
+}
+.btn-edit {
+    color: #171717;
+    cursor: pointer;
+}
+.btn-delete {
+    color: red;
+    cursor: pointer;
+}
+.error-message {
+    color: red;
+    font-size: small;
+    margin: 10px 0 0 0;
+}
